@@ -75,7 +75,7 @@ const Landing = () => {
         <div className="container mx-auto px-6 py-20 text-center">
           <div className="max-w-4xl mx-auto">
             {/* Main heading with animation */}
-            <div className="mb-8 animate-fade-in">
+            <div className="mb-8">
               <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent">
                   AI-Powered
@@ -92,7 +92,7 @@ const Landing = () => {
             </div>
 
             {/* CTA Button */}
-            <div className="mb-16 animate-scale-in" style={{animationDelay: '0.5s'}}>
+            <div className="mb-16">
               <Button
                 onClick={handleStartChat}
                 className="group relative bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 hover:from-purple-700 hover:via-blue-700 hover:to-indigo-700 text-white px-12 py-6 text-xl font-bold rounded-2xl shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-purple-500/25"
@@ -119,7 +119,7 @@ const Landing = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-white/10 backdrop-blur-lg border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105" style={{animationDelay: '0.2s'}}>
+              <Card className="bg-white/10 backdrop-blur-lg border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
                 <CardContent className="p-8 text-center">
                   <div className="p-4 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full w-fit mx-auto mb-4">
                     <TrendingUp className="w-8 h-8" />
@@ -129,7 +129,7 @@ const Landing = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-white/10 backdrop-blur-lg border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105" style={{animationDelay: '0.4s'}}>
+              <Card className="bg-white/10 backdrop-blur-lg border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
                 <CardContent className="p-8 text-center">
                   <div className="p-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full w-fit mx-auto mb-4">
                     <Shield className="w-8 h-8" />

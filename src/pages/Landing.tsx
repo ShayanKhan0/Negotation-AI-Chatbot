@@ -33,8 +33,8 @@ const Landing = () => {
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-80 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-80 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse animation-delay-2000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-pulse animation-delay-4000"></div>
+        <div className="absolute -bottom-40 -left-80 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-pulse"></div>
       </div>
 
       <div className="relative z-10">
@@ -61,7 +61,7 @@ const Landing = () => {
         {/* Hero Section */}
         <div className="container mx-auto px-6 py-20 text-center">
           <div className="max-w-4xl mx-auto">
-            <div className="mb-8 animate-fade-in animation-delay-200">
+            <div className="mb-8 animate-fade-in">
               <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent animate-pulse">
                   AI-Powered
@@ -77,7 +77,7 @@ const Landing = () => {
               </p>
             </div>
 
-            <div className="mb-16 animate-fade-in animation-delay-400">
+            <div className="mb-16 animate-fade-in">
               <Button
                 onClick={handleStartChat}
                 className="group relative bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 hover:from-purple-700 hover:via-blue-700 hover:to-indigo-700 text-white px-12 py-6 text-xl font-bold rounded-2xl shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-purple-500/50"
@@ -88,14 +88,14 @@ const Landing = () => {
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Button>
-              <p className="text-gray-400 mt-4 animate-fade-in animation-delay-600">
+              <p className="text-gray-400 mt-4 animate-fade-in">
                 ✨ No signup required • Free to try • Instant results
               </p>
             </div>
 
             {/* Feature Cards */}
             <div className="grid md:grid-cols-3 gap-8 mb-20">
-              <Card className="bg-white/10 backdrop-blur-lg border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in animation-delay-800">
+              <Card className="bg-white/10 backdrop-blur-lg border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in">
                 <CardContent className="p-8 text-center">
                   <div className="p-4 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full w-fit mx-auto mb-4 animate-pulse">
                     <Brain className="w-8 h-8" />
@@ -105,9 +105,9 @@ const Landing = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-white/10 backdrop-blur-lg border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in animation-delay-1000">
+              <Card className="bg-white/10 backdrop-blur-lg border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in">
                 <CardContent className="p-8 text-center">
-                  <div className="p-4 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full w-fit mx-auto mb-4 animate-pulse animation-delay-1000">
+                  <div className="p-4 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full w-fit mx-auto mb-4 animate-pulse">
                     <TrendingUp className="w-8 h-8" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">Real-time Insights</h3>
@@ -115,9 +115,9 @@ const Landing = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-white/10 backdrop-blur-lg border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in animation-delay-1200">
+              <Card className="bg-white/10 backdrop-blur-lg border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in">
                 <CardContent className="p-8 text-center">
-                  <div className="p-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full w-fit mx-auto mb-4 animate-pulse animation-delay-2000">
+                  <div className="p-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full w-fit mx-auto mb-4 animate-pulse">
                     <Shield className="w-8 h-8" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">Fair Deal Guarantee</h3>
@@ -127,7 +127,7 @@ const Landing = () => {
             </div>
 
             {/* Stats Section */}
-            <div className="grid md:grid-cols-3 gap-8 mb-20 animate-fade-in animation-delay-1400">
+            <div className="grid md:grid-cols-3 gap-8 mb-20 animate-fade-in">
               <div className="text-center">
                 <div className="text-4xl font-bold text-purple-400 mb-2">95%</div>
                 <div className="text-gray-300">Success Rate</div>
@@ -143,7 +143,7 @@ const Landing = () => {
             </div>
 
             {/* How it Works */}
-            <div className="mb-20 animate-fade-in animation-delay-1600">
+            <div className="mb-20 animate-fade-in">
               <h2 className="text-3xl font-bold mb-12 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
                 How NegoAI Works
               </h2>
@@ -168,12 +168,12 @@ const Landing = () => {
                   </div>
                   <h3 className="text-xl font-bold mb-3">3. Get Recommendations</h3>
                   <p className="text-gray-300">Receive personalized pricing suggestions and negotiation strategies.</p>
-                </div>
+                  </div>
               </div>
             </div>
 
             {/* CTA Section */}
-            <div className="mt-20 p-8 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-3xl backdrop-blur-sm border border-white/20 animate-fade-in animation-delay-1800 hover:bg-gradient-to-r hover:from-purple-600/30 hover:to-blue-600/30 transition-all duration-300">
+            <div className="mt-20 p-8 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-3xl backdrop-blur-sm border border-white/20 animate-fade-in hover:bg-gradient-to-r hover:from-purple-600/30 hover:to-blue-600/30 transition-all duration-300">
               <h3 className="text-2xl font-bold mb-4">Ready to negotiate like a pro?</h3>
               <p className="text-gray-300 mb-6">Join thousands of freelancers who have closed better deals with AI assistance.</p>
               <Button

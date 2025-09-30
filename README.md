@@ -1,4 +1,4 @@
-# Welcome to my Freelancing Website Price Negotiation Chatbot project
+# Welcome to my Freelancing Price Negotiation Chatbot project
 
 ## How can I edit this code?
 
